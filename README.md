@@ -17,13 +17,13 @@ Le projet comprend le nettoyage des données, l'analyse exploratoire et la const
   - BMI : indice de masse corporelle
   - DiabetesPedigreeFunction : fonction de prédisposition génétique au diabète
   - Age : âge
-- **Cible**: Outcome (1 = Diabétique, 0 = Non-Diabétique)
+- *Cible*: Outcome (1 = Diabétique, 0 = Non-Diabétique)
 
 # Étapes de l'analyse
 1. Chargement et nettoyage des données (Data Cleaning)  
 2. Analyse exploratoire (EDA) avec plots et statistiques  
 3. Division des données en train/test  
-4. Construction du modèle *Régression Logistique**  
+4. Construction du modèle *Régression Logistique*  
 5. Évaluation du modèle avec Accuracy, Confusion Matrix et Classification Report  
 6. Visualisation des résultats
 
@@ -38,9 +38,21 @@ Le projet comprend le nettoyage des données, l'analyse exploratoire et la const
 - matplotlib  
 - seaborn  
 - scikit-learn
+- Streamlit
+- joblib
 
 # Comment exécuter le projet
-1. Télécharger les fichiers : `Diabetes.ipynb` et `diabetes.csv`  
+1. Télécharger les fichiers : `Diabetes_analysis.` et `diabetes.csv`  
 2. Ouvrir le Notebook dans Jupyter  
 3. Exécuter les cellules dans l’ordre
+ 
+ # 2 Avec l’application Streamlit
+1. Télécharger les fichiers : `app.py` et `full_pipeline_diabetes.pkl`  
+2. Ouvrir le dossier dans *PyCharm* ou un autre IDE Python
+3. pip install streamlit pandas numpy scikit-learn
+4.  Dans le terminal intégré, exécuter :streamlit run app.py
+5. L’application s’ouvrira automatiquement dans le navigateur
+
+Entrer les valeurs des paramètres pour faire des prédictions de diabète
+
 
